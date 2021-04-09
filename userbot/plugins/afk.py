@@ -108,23 +108,23 @@ async def on_afk(event):
         if AFK_.afk_type == "text":
             if AFK_.msg_link and AFK_.reason:
                 message_to_reply = (
-                    f"**I am AFK .\n\nAFK Since : {endtime}\nReason : **{AFK_.reason}"
+                    f"**꧁✪≋✘_.мүsтεяισυs_.✘≋✪꧂ is not online anymore.🥺 \nIf you see my master online it is me the userbot.😞\nAFK Since : {endtime} (The offline time rests when the server restarts) \nReason : **{AFK_.reason}"
                 )
             elif AFK_.reason:
                 message_to_reply = (
-                    f"**I am AFK\n\nAFK Since : {endtime}\nReason :** `{AFK_.reason}`"
+                    f"**꧁✪≋✘_.мүsтεяισυs_.✘≋✪꧂ is not online anymore.🥺 \nIf you see my master online it is me the userbot.😞\nAFK Since : {endtime} (The offline time rests when the server restarts) nReason :** `{AFK_.reason}`"
                 )
             else:
-                message_to_reply = f"**I am AFK\n\nAFK Since : {endtime}\nReason :** `Not Mentioned ( ಠ ʖ̯ ಠ)`"
+                message_to_reply = f"**꧁✪≋✘_.мүsтεяισυs_.✘≋✪꧂ is not online anymore.🥺 \nIf you see my master online it is me the userbot.😞\nAFK Since : {endtime} (The offline time rests when the server restarts) \nReason :**Read my Bio**"
             if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
                 msg = await event.reply(message_to_reply)
         elif AFK_.afk_type == "media":
             if AFK_.reason:
                 message_to_reply = (
-                    f"**I am AFK\n\nAFK Since : {endtime}\nReason :** `{AFK_.reason}`"
+                    f"**꧁✪≋✘_.мүsтεяισυs_.✘≋✪꧂ is not online anymore.🥺 \nIf you see my master online it is me the userbot.😞\nAFK Since : {endtime} (The offline time rests when the server restarts) \nReason :** `{AFK_.reason}`"
                 )
             else:
-                message_to_reply = f"**I am AFK\n\nAFK Since : {endtime}\nReason :** `Not Mentioned ( ಠ ʖ̯ ಠ)`"
+                message_to_reply = f"**꧁✪≋✘_.мүsтεяισυs_.✘≋✪꧂ is not online anymore.🥺 \nIf you see my master online it is me the userbot.😞\nAFK Since : {endtime} (The offline time rests when the server restarts) \nReason :**Read my bio**</a>"
             if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
                 msg = await event.reply(message_to_reply, file=AFK_.media_afk.media)
         if event.chat_id in AFK_.last_afk_message:
